@@ -15,6 +15,7 @@
 		F66FADCC1F27FCA30017F758 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADCB1F27FCA30017F758 /* ChatVC.swift */; };
 		F66FADCE1F27FCB20017F758 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADCD1F27FCB20017F758 /* ChannelVC.swift */; };
 		F66FADD11F2803990017F758 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66FADCF1F2803340017F758 /* SWRevealViewController.m */; };
+		F66FADD41F2838650017F758 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADD31F2838650017F758 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F66FADCF1F2803340017F758 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F66FADD01F2803340017F758 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F66FADD21F2804320017F758 /* smackChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		F66FADD31F2838650017F758 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		F66FADC91F27FC7C0017F758 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F66FADD31F2838650017F758 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				F66FADCC1F27FCA30017F758 /* ChatVC.swift in Sources */,
 				F66FADCE1F27FCB20017F758 /* ChannelVC.swift in Sources */,
+				F66FADD41F2838650017F758 /* GradientView.swift in Sources */,
 				F66FADB31F27F4A40017F758 /* AppDelegate.swift in Sources */,
 				F66FADD11F2803990017F758 /* SWRevealViewController.m in Sources */,
 			);
