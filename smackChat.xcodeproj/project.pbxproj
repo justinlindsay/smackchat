@@ -16,6 +16,8 @@
 		F66FADCE1F27FCB20017F758 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADCD1F27FCB20017F758 /* ChannelVC.swift */; };
 		F66FADD11F2803990017F758 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66FADCF1F2803340017F758 /* SWRevealViewController.m */; };
 		F66FADD41F2838650017F758 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADD31F2838650017F758 /* GradientView.swift */; };
+		F66FADD71F2840790017F758 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADD61F2840790017F758 /* Constants.swift */; };
+		F66FADD91F2844A40017F758 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66FADD81F2844A40017F758 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F66FADD01F2803340017F758 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F66FADD21F2804320017F758 /* smackChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smackChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		F66FADD31F2838650017F758 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F66FADD61F2840790017F758 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F66FADD81F2844A40017F758 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		F66FADB11F27F4A40017F758 /* smackChat */ = {
 			isa = PBXGroup;
 			children = (
+				F66FADD51F2840680017F758 /* Utilities */,
 				F66FADCA1F27FC810017F758 /* Model */,
 				F66FADC91F27FC7C0017F758 /* View */,
 				F66FADC81F27FC700017F758 /* Controller */,
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F66FADCB1F27FCA30017F758 /* ChatVC.swift */,
+				F66FADD81F2844A40017F758 /* LoginVC.swift */,
 				F66FADCD1F27FCB20017F758 /* ChannelVC.swift */,
 			);
 			path = Controller;
@@ -131,6 +137,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F66FADD51F2840680017F758 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F66FADD61F2840790017F758 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +272,11 @@
 			files = (
 				F66FADCC1F27FCA30017F758 /* ChatVC.swift in Sources */,
 				F66FADCE1F27FCB20017F758 /* ChannelVC.swift in Sources */,
+				F66FADD91F2844A40017F758 /* LoginVC.swift in Sources */,
 				F66FADD41F2838650017F758 /* GradientView.swift in Sources */,
 				F66FADB31F27F4A40017F758 /* AppDelegate.swift in Sources */,
 				F66FADD11F2803990017F758 /* SWRevealViewController.m in Sources */,
+				F66FADD71F2840790017F758 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
