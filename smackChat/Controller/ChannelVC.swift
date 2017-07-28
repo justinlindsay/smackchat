@@ -23,7 +23,12 @@ class ChannelVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
     }
     
-    @objc func userDataDidChange(_ notif: Notification) {
+    override func viewDidAppear(_ animated: Bool) {
+        
+       setupUserInfo()
+    }
+    
+    func setupUserInfo() {
         
         if AuthService.instance.isLoggedIn {
             
@@ -39,6 +44,13 @@ class ChannelVC: UIViewController {
             
         }
     }
+    
+    @objc func userDataDidChange(_ notif: Notification) {
+        
+        setupUserInfo()
+       
+    }
+    
     @IBAction func loginBtnPressed(_ sender: UIButton) {
         
         if AuthService.instance.isLoggedIn {
