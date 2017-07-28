@@ -12,6 +12,7 @@ class UserDataService {
     
     static let instance = UserDataService()
     
+    // Variables
     public private(set) var id = ""
     public private(set) var avatarColor = ""
     public private(set) var avatarName = ""
@@ -76,6 +77,7 @@ class UserDataService {
         AuthService.instance.isLoggedIn = false
         AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
+        MessageService.instance.clearChannels()
         
     }
 }
