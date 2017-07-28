@@ -18,8 +18,11 @@ class SocketService: NSObject {
         super.init()
         
     }
+    // Variables
     
     var socket: SocketIOClient = SocketIOClient(socketURL: URL(string: BASE_URL)!)
+    
+    // Functions
     
     func establishConnection() {
         

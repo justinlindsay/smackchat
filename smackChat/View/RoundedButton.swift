@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable
 class RoundedButton: UIButton {
     
+    // Variables
+    
     @IBInspectable var cornerRadius: CGFloat = 3.0 {
         
         didSet {
@@ -19,6 +21,8 @@ class RoundedButton: UIButton {
             
         }
     }
+    
+    // Functions
     
     override func awakeFromNib() {
         

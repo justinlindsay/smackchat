@@ -15,6 +15,8 @@ class AddChannelVC: UIViewController {
     @IBOutlet weak var chanDesc: UITextField!
     @IBOutlet weak var bgView: UIView!
     
+    // Functions
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -38,6 +40,8 @@ class AddChannelVC: UIViewController {
     
     }
 
+    // Actions
+    
     @IBAction func createChannelPressed(_ sender: Any) {
         
         guard let channelName = nameTxt.text , nameTxt.text != "" else { return }

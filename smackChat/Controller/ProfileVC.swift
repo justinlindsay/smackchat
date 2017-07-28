@@ -10,12 +10,13 @@ import UIKit
 
 class ProfileVC: UIViewController {
     
-    //Outlets
+    // Outlets
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var bgView: UIView!
     
+    // Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,9 @@ class ProfileVC: UIViewController {
         dismiss(animated: true, completion: nil)
         
     }
+    
+    // Actions
+    
     @IBAction func closeModelPressed(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)

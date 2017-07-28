@@ -11,6 +11,7 @@ import UIKit
 class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Outlets
+    
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
     @IBOutlet weak var UITextBox: UITextField!
@@ -19,6 +20,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //Variables
     var isTyping = false
+    
+    
+    // Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,6 +66,33 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 
             })
         }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell {
+            
+            let message = MessageService.instance.messages[indexPath.row]
+            cell.configureCell(message: message)
+            return cell
+            
+        } else {
+            
+            return UITableViewCell()
+            
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return MessageService.instance.messages.count
+        
     }
     
     @objc func handleTap() {
@@ -130,6 +161,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
+    // Actions
+    
     @IBAction func sendMsgPressed(_ sender: Any) {
         
         if AuthService.instance.isLoggedIn {
@@ -167,32 +201,5 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             isTyping = true
         }
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell {
-            
-            let message = MessageService.instance.messages[indexPath.row]
-            cell.configureCell(message: message)
-            return cell
-            
-        } else {
-            
-            return UITableViewCell()
-            
-        }
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 1
-        
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return MessageService.instance.messages.count
-        
-    }
-    
+
 }

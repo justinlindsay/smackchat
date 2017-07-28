@@ -15,6 +15,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
+    // Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
@@ -30,6 +32,8 @@ class LoginVC: UIViewController {
         passwordTxt.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
         
     }
+    
+    // Actions
     
     @IBAction func loginPressed(_ sender: Any) {
         

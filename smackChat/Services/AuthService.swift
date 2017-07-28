@@ -16,6 +16,8 @@ class AuthService {
     
     let defaults = UserDefaults.standard
     
+    // Variables
+    
     var isLoggedIn: Bool {
         
         get {
@@ -56,6 +58,8 @@ class AuthService {
             
         }
     }
+    
+    // Functions
     
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler) {
         

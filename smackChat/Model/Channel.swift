@@ -10,6 +10,8 @@ import Foundation
 
 struct Channel: Decodable {
     
+    // Variables
+    
     public private(set) var channelTitle: String!
     public private(set) var channelDescription: String!
     public private(set) var id: String!

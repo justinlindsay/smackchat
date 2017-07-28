@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable
 class CircleImage: UIImageView {
     
+    // Functions
+    
     override func awakeFromNib() {
         setUpView()
     }

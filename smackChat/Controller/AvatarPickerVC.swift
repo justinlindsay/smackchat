@@ -17,6 +17,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     // Variables
     var avatarType = AvatarType.dark
     
+    // Functions
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -79,6 +80,8 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         self.dismiss(animated: true, completion: nil)
     }
+    
+    // Actions
     
     @IBAction func backPressed(_ sender: Any) {
         

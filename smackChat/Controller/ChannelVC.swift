@@ -17,6 +17,8 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var userImg: CircleImage!
     @IBOutlet weak var tableView: UITableView!
     
+    // Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -106,6 +108,8 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         setupUserInfo()
        
     }
+    
+    // Actions
     
     @IBAction func addChannelBtn(_ sender: Any) {
         
