@@ -148,15 +148,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEZ-ra-y0u">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="DV7-6z-Pk1" firstAttribute="bottom" secondItem="sz8-up-kmL" secondAttribute="bottom" id="4uO-dw-NVj"/>
                             <constraint firstItem="DDM-v4-1qV" firstAttribute="leading" secondItem="sz8-up-kmL" secondAttribute="leading" id="A3j-2p-KlC"/>
+                            <constraint firstItem="JEZ-ra-y0u" firstAttribute="leading" secondItem="sz8-up-kmL" secondAttribute="leading" constant="8" id="Are-x6-D42"/>
                             <constraint firstItem="DV7-6z-Pk1" firstAttribute="top" secondItem="DKN-zR-m9f" secondAttribute="bottom" constant="30" id="DdS-0d-2l7"/>
                             <constraint firstItem="sz8-up-kmL" firstAttribute="trailing" secondItem="DKN-zR-m9f" secondAttribute="trailing" id="O7A-b3-MPM"/>
                             <constraint firstItem="DDM-v4-1qV" firstAttribute="top" secondItem="1wM-cJ-WgD" secondAttribute="top" id="PDP-ls-QAE"/>
                             <constraint firstItem="DKN-zR-m9f" firstAttribute="leading" secondItem="sz8-up-kmL" secondAttribute="leading" id="PDr-fy-SpH"/>
+                            <constraint firstItem="DV7-6z-Pk1" firstAttribute="top" secondItem="JEZ-ra-y0u" secondAttribute="bottom" constant="6" id="Qak-Qp-71f"/>
                             <constraint firstItem="sz8-up-kmL" firstAttribute="trailing" secondItem="N7i-ib-wpo" secondAttribute="trailing" constant="8" id="Rwc-U2-PTa"/>
                             <constraint firstItem="DDM-v4-1qV" firstAttribute="trailing" secondItem="sz8-up-kmL" secondAttribute="trailing" id="VSc-L0-hEx"/>
                             <constraint firstItem="sz8-up-kmL" firstAttribute="trailing" secondItem="DV7-6z-Pk1" secondAttribute="trailing" id="gia-6n-gY7"/>
@@ -172,6 +180,7 @@
                         <outlet property="menuBtn" destination="Zhc-ua-nWa" id="Rhk-3d-ZtE"/>
                         <outlet property="sendBtn" destination="N7i-ib-wpo" id="QRQ-oM-am0"/>
                         <outlet property="tableView" destination="DKN-zR-m9f" id="RGb-fE-m4n"/>
+                        <outlet property="typingUsersLbl" destination="JEZ-ra-y0u" id="YX7-GK-18Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFa-Fa-KkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
